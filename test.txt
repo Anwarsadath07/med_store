@@ -1,0 +1,21 @@
+[
+  body("medicineName")
+    .trim()
+    .notEmpty()
+    .withMessage("Medicine name is required"),
+  body("medicinePrice")
+    .trim()
+    .notEmpty()
+    .withMessage("Price is required")
+    .isNumeric()
+    .withMessage("Price should be a number")
+    .custom((value, { req }) => {
+      if (value < 1) {
+        throw new Error("Please enter a valid price");
+      }
+      return true;
+    }),
+  body("medicineCategory").notEmpty().withMessage("Category is required"),
+  body("medicineAmount").notEmpty().withMessage("Please enter the correct amount"),
+]
+ 

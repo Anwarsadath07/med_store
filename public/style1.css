@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url(https://img.freepik.com/free-photo/some-pills-spray-pill-bottle-needles-light-cyan-background-top-view-space-text_176474-1747.jpg?w=740&t=st=1709304254~exp=1709304854~hmac=7df61098da84c080a9d77dd7fe15810a1d7f73e3af67ad0c827e84823abdd05ahttps://img.freepik.com/free-vector/medical-health-care-background-concept_1017-15004.jpg?w=740&t=st=1709304304~exp=1709304904~hmac=cd6cc1a9852d975f6ade04ae89cfca426ff18edb36d74529598710c635e8fa20);
+  background-size: cover;
+}
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 10%;
+}
+.form-container{
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px;
+  background-color: transparent;
+}
+.form-group{
+  margin-bottom: 15px;
+}
+.form-group label{
+  display: block;
+  font-weight: bold;
+   margin-bottom: 5px;
+}
+.form-group input{
+  width: 100%;
+  padding: 8px;
+  font-size: 10px;
+  border: 1 px solid grey ;
+}
+.submit-btn{
+  width: 100%;
+  display:block;
+  padding: 10px;
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover{
+  background-color: blueviolet;
+}
+p{
+  margin-top: 15px;
+
+}

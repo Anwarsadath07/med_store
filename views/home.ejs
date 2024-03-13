@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Form</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #3498db;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(https://t4.ftcdn.net/jpg/03/16/39/05/240_F_316390528_pdGvI0V4C7eIamSYifI0Faj9dp9XEoLu.jpg);
+      background-size: cover;
+    }
+
+    .form-container {
+      background-color: rgba(236, 240, 241, 0.8);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      color: white;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-container">
+          <h2>Add Medicine</h2>
+          <form action="/medicine/add-medicine" method="post">
+            <div class="form-group">
+              <label for="name">Medicine:</label>
+              <input type="text" class="form-control" id="name" name="medicineName" required>
+            </div>
+            <div class="form-group">
+              <label for="Price">Price:</label>
+              <input type="number" class="form-control" id="Price" name="medicinePrice" required>
+            </div>
+            <div class="form-group">
+              <label for="MedicineCategory">Category:</label>
+              <input type="text" class="form-control" id="MedicineCategory" name="medicineCategory" required>
+            </div>
+            <div class="form-group">
+              <label for="MedicineAmount">Amount:</label>
+              <input type="text" class="form-control" id="MedicineAmount" name="medicineAmount" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
